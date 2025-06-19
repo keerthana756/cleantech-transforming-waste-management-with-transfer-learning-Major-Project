@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Municipal Waste Classification</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #f9f9f9;
+            padding: 20px 10px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+            color: #e74c3c;
+        }
+
+        header h2 {
+            font-size: 1.2rem;
+            color: #888;
+            margin-top: 10px;
+        }
+
+        section {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        section h2 {
+            text-align: center;
+            color: #e74c3c;
+            font-size: 2rem;
+        }
+
+        .about-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 40px;
+            margin-top: 30px;
+        }
+
+        .about-text {
+            flex: 1;
+            min-width: 300px;
+            text-align: justify;
+        }
+
+        .about-text ul {
+            list-style: none;
+            padding: 0;
+            margin-top: 20px;
+        }
+
+        .about-text ul li {
+            margin: 10px 0;
+            position: relative;
+            padding-left: 30px;
+        }
+
+        .about-text ul li:before {
+            content: "✔";
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: #e74c3c;
+            font-weight: bold;
+        }
+
+        .about-highlight {
+            flex: 1;
+            min-width: 300px;
+            text-align: center;
+        }
+
+        .about-highlight p {
+            margin-top: 10px;
+            line-height: 1.8;
+        }
+
+        .learn-more-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            color: #e74c3c;
+            border: 2px solid #e74c3c;
+            border-radius: 20px;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: bold;
+            margin-top: 20px;
+            transition: 0.3s;
+        }
+
+        .learn-more-btn:hover {
+            background-color: #e74c3c;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>About Us</h1>
+        <h2>Learn More About Us</h2>
+    </header>
+
+    <section>
+        <h2>GreenGuard Insights</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>
+                    GreenGuard Insights is a pioneering organization dedicated to enhancing the efficiency and sustainability of municipal waste management.
+                    Our team comprises innovative scientists, technologists, and environmental experts committed to leveraging advanced classification
+                    technologies to ensure that waste is sorted accurately and managed effectively.
+                </p>
+                <ul>
+                    <li>Comprehensive analysis and classification of municipal waste based on type and recyclability.</li>
+                    <li>Continuous monitoring of waste processing to ensure efficient recycling and disposal.</li>
+                    <li>Innovative solutions to minimize landfill use by identifying and separating recyclable materials early in the waste management process.</li>
+                </ul>
+            </div>
+            <div class="about-highlight">
+                <p>
+                    Our team is our greatest asset. We are a diverse group of experts in fields such as environmental science, data analytics, software engineering,
+                    and waste management. Together, we bring a wealth of knowledge and experience to tackle the challenges of municipal waste classification and management.
+                </p>
+                <a href="#learn-more" class="learn-more-btn">Learn More</a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Municipal Waste Classification</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background: url('/static/waste.png') no-repeat center center/cover;
+            height: 100vh;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+        }
+
+        header::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+
+        header .content {
+            z-index: 2;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin: 1rem 0;
+            max-width: 700px;
+        }
+
+        nav {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px 20px;
+            z-index: 3;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 1rem;
+            padding: 10px 15px;
+        }
+
+        nav a:hover {
+            color: #00aced;
+        }
+
+        nav .predict-button {
+            background-color: #00aced;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 8px 15px;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 1rem;
+            margin-left: 20px;
+        }
+
+        nav .predict-button:hover {
+            background-color: #007bb5;
+        }
+
+        header a {
+            background: #fff;
+            color: #333;
+            padding: 0.8rem 1.5rem;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        header a:hover {
+            background: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/predict">Predict</a>
+        <a href="/contact">Contact</a>
+    </nav>
+    <header>
+        <div class="content">
+            <h1>Municipal Waste Classification</h1>
+            <p>
+                This platform allows you to upload images of waste materials, and our advanced machine learning model will classify them into appropriate categories.
+                Proper waste classification helps in efficient recycling and waste management, making our environment cleaner and more sustainable.
+            </p>
+            <a href="#get-started">Get Started</a>
+        </div>
+    </header>
+</body>
+</html>
